@@ -9,6 +9,9 @@
   -ms-transition: none !important;
   -o-transition: none !important;
   }
+  body {
+    display: none;
+}
   </style>
   <Title>5327A-Home</title>
   <link rel="shortcut icon" href="favicon.ico" />
@@ -55,7 +58,7 @@
     <div class="col-md-2">
       <center>
       <h4>Kush Rastogi</h4>
-      <img style="transform: rotate(90deg);" src="assets/IMG_0276.JPG" class="img-responsive" alt="Responsive image">
+      <img style="transform: rotate(90deg);padding-top:30px;padding-bottom:30px" src="assets/IMG_0276.JPG" class="img-responsive" alt="Responsive image">
       <h5>Co-Captain</h5>
       <h6>Senior</h6>
     </center>
@@ -153,11 +156,9 @@
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
-    $(document).ready(function() {
-      $("body").removeClass("preload");
-    },
-    function() {
-    });
+$(function () {
+    $('body').show();
+}); // end ready
   </script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
